@@ -1,0 +1,29 @@
+//typografy
+
+@mixin main-text {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.02em;
+}
+
+@mixin title {
+    font-size: 4rem;
+    line-height: 6.4rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.005em;
+    text-transform: uppercase;
+}
+
+@mixin title-2 {
+    font-size: 3.2rem;
+    line-height: 6.4rem;
+    letter-spacing: 0.005em;
+    text-transform: uppercase;
+}
+
+@mixin text-opacity {
+    color: rgba(#FFFFFF, 0.5)
+}
+
+

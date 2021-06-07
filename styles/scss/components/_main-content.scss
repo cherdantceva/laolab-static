@@ -1,0 +1,14 @@
+@import "styles/scss/mixins";
+.main-content {
+    padding-bottom: 10rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__content {
+        @include title;
+        margin-bottom: 3rem;
+    }
+}
+

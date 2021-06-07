@@ -1,0 +1,16 @@
+// Apply a natural box layout model to all elements
+// but allowing components to change
+// http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+
+
+@import "reset";
+@import "fonts";
+@import "global";
+@import "mixins";
+@import "components/page";
+@import "components/header";
+@import "components/main-content";
+@import "components/video";
+@import "components/link";
+@import "components/vacancies-list";
+@import "components/vacancy-item";

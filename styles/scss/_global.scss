@@ -1,0 +1,16 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: Gilroy, Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+    background: #000000;
+    color: white;
+    > div {
+        width: 100%;
+    }
+}
