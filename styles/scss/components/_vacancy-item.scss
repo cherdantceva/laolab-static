@@ -14,7 +14,7 @@
     }
 
     &__descr {
-        @include main-text;
+        @include text-18;
         @include text-opacity;
         text-transform: uppercase;
     }
