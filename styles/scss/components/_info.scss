@@ -1,0 +1,23 @@
+@import "styles/scss/mixins";
+.info {
+    height: 6.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_gray {
+        background: #1F2327;
+    }
+
+    &__text, &__link {
+        @include main-text;
+        @include text-opacity;
+    }
+
+    &__link {
+        text-decoration: underline;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

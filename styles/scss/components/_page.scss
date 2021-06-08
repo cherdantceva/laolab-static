@@ -5,10 +5,20 @@
     grid-template-columns: repeat(2, 1fr);
 
     &__part {
+        position: relative;
         display: flex;
         flex-direction: column;
         padding: 10rem 10rem 10rem;
         height: 100vh;
         overflow: hidden;
+    }
+
+    &__info {
+        position: absolute;
+        left: 0;
+        right: 0;
+        &_bottom {
+            bottom: 0;
+        }
     }
 }
