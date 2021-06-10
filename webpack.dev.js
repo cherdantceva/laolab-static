@@ -23,17 +23,31 @@ module.exports = env => {
 
         plugins: [
             new HtmlWebpackPlugin({
-                    template: path.join(__dirname, 'index.ejs'),
+                    template: path.join(__dirname, 'pages/index.ejs'),
                     title: 'laolab',
                     minify: false,
                     filename: 'index.html',
                 }
             ),
             new HtmlWebpackPlugin({
-                    template: path.join(__dirname, 'vacancies.ejs'),
+                    template: path.join(__dirname, 'pages/vacancies.ejs'),
                     title: 'laolab',
                     minify: false,
                     filename: 'vacancies.html',
+                }
+            ),
+            new HtmlWebpackPlugin({
+                    template: path.join(__dirname, 'pages/index-mobile.ejs'),
+                    title: 'laolab',
+                    minify: false,
+                    filename: 'index-mobile.html',
+                }
+            ),
+            new HtmlWebpackPlugin({
+                    template: path.join(__dirname, 'pages/vacancies-mobile.ejs'),
+                    title: 'laolab',
+                    minify: false,
+                    filename: 'vacancies-mobile.html',
                 }
             )
         ]

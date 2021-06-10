@@ -35,6 +35,20 @@ module.exports = env => {
                     filename: 'vacancies.html',
                 }
             ),
+            new HtmlWebpackPlugin({
+                    template: path.join(__dirname, 'index-mobile.ejs'),
+                    title: 'laolab index',
+                    minify: false,
+                    filename: 'index-mobile.html',
+                }
+            ),
+            new HtmlWebpackPlugin({
+                    template: path.join(__dirname, 'vacancies-mobile.ejs'),
+                    title: 'laolab index',
+                    minify: false,
+                    filename: 'vacancies-mobile.html',
+                }
+            ),
 
             new CopyPlugin({
                 patterns: [

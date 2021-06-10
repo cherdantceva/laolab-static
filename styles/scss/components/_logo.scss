@@ -1,0 +1,13 @@
+@import "./styles/scss/mixins";
+
+.logo {
+    display: block;
+    height: 5.6rem;
+    width: 5.6rem;
+    background: url("/res/img/logo.svg") no-repeat 100% center;
+    @include mediaMob {
+        height: 3.2rem;
+        width: 3.2rem;
+        background: url("/res/img/logo-mobile.svg") no-repeat 100% center;
+    }
+}

@@ -2,22 +2,37 @@
 .info {
     height: 6.4rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
 
-    &_gray {
-        background: #1F2327;
-    }
-
-    &__text, &__link {
+    &__inner {
+        flex: 1 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         @include main-text;
-        @include text-opacity;
+        &_gray {
+            background: #1F2327;
+            @include text-opacity;
+        }
+        &_blue {
+            background: #0080FF;
+            color: white;
+        }
+
+        &_50 {
+            width: 50%;
+        }
+
+        @include mediaMob {
+            @include text-inter-14;
+        }
     }
 
     &__link {
-        text-decoration: underline;
-        &:hover {
-            text-decoration: none;
+        @include link-main;
+        &_gray {
+            &:after {
+                background: gray;
+            }
         }
     }
 }

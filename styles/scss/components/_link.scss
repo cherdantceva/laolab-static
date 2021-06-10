@@ -8,6 +8,9 @@
         color: white;
         white-space: nowrap;
         @include main-text;
+        @include mediaMob {
+            @include text-inter-16;
+        }
     }
 
     &__icon {

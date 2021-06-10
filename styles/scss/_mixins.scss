@@ -12,11 +12,14 @@
     letter-spacing: 0.02em;
 }
 
+@mixin text-18-mobile {
+    font-size: 1.8rem;
+    line-height: 1.4;
+}
+
 @mixin title {
     font-size: 4rem;
     line-height: 140%;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.02em;
 }
 
@@ -26,8 +29,61 @@
     letter-spacing: 0.005em;
 }
 
+@mixin title-3 {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+}
+
 @mixin text-opacity {
     color: rgba(#FFFFFF, 0.5)
 }
+
+@mixin text-inter-14 {
+    font-family: Inter, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+@mixin text-inter-16 {
+    font-family: Inter, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+//links
+
+@mixin link-main {
+    color: inherit;
+    position: relative;
+    text-decoration: none;
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: -2px;
+        height: 1px;
+        width: calc(100% + 4px);
+        opacity: 1;
+        transition: 0.3s opacity ease-in-out;
+    }
+
+    &:hover {
+        &:after {
+            opacity: 0;
+        }
+    }
+}
+
+//breakpoints
+
+@mixin mediaMob {
+    @media (max-width: 580px) {
+        @content;
+    }
+}
+
+
 
 
